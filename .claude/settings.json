@@ -1,0 +1,22 @@
+{
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true
+  },
+  "enabledMcpjsonServers": [
+    "playwright",
+    "playwright-session"
+  ],
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}\"/.cursor/hooks/quality-gate.mjs",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

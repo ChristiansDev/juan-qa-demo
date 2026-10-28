@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "stop": [
+      {
+        "command": "node .cursor/hooks/quality-gate.mjs",
+        "timeout": 120,
+        "loop_limit": 3
+      }
+    ]
+  }
+}
